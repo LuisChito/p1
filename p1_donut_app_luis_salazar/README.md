@@ -3,5 +3,4 @@
 ***Materia impartida por el maestro Rodrigo Fidel Gaxiola Sosa***
 
 > By Luis Salazar
-- Ultimo cambio 
-    -Readmi creado
+- Ultimo cambio (Readmi creado)
