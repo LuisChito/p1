@@ -1,3 +1,9 @@
-# p1_donut_app_luis_salazar
+# Aplicación de la materia de topicos
+# avanzados de programación
 
-A new Flutter project.
+***Materia impartida por el maestro***
+***Rodrigo Fidel Gaxiola Sosa***
+
+> By Luis Salazar
+#- Ultimos cambios 
+    -Readmi creado-
