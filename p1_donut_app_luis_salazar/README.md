@@ -1,9 +1,7 @@
-# Aplicación de la materia de topicos
-# avanzados de programación
+# Aplicación de la materia de topicos avanzados de programación
 
-***Materia impartida por el maestro***
-***Rodrigo Fidel Gaxiola Sosa***
+***Materia impartida por el maestro Rodrigo Fidel Gaxiola Sosa***
 
 > By Luis Salazar
-#- Ultimos cambios 
-    -Readmi creado-
+- Ultimo cambio 
+    Readmi creado
