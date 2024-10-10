@@ -1,50 +1,63 @@
 import 'package:flutter/material.dart';
 
+import '../utils/myTab.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
-  @override
+ @override
   State<HomePage> createState() => _HomePageState();
 }
 
+List<Widget> myTabs =[
+  //donut tab
+   const MyTab(iconPath: 'lib/icons/donut.png',),
+  //burger tab
+   const MyTab(iconPath: 'lib/icons/burger.png',),
+  //smothie tab
+  const MyTab(iconPath: 'lib/icons/smoothie.png'),
+  //pizza tab
+  const MyTab(iconPath: 'lib/icons/pizza.png',),
+   //pancakes
+  const MyTab(iconPath: 'lib/icons/pancakes.png',) 
+];
 class _HomePageState extends State<HomePage> {
-  List <Widget> myTabs = [
-    //donut tab
-    const MyTab(
-      iconPath: 'lib/icons/donut.png')
-    //burguers tab
-    //smoothie tab
-    //pancake tab
-    //pizza tab
-  ];
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        leading: const Padding(
-          padding: EdgeInsets.only(left: 24.0),
-          child: Icon(Icons.menu, color: Colors.black),
+    return  DefaultTabController( 
+      length: 5, 
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor:  Colors.transparent,
+          leading: Padding(
+            padding: const EdgeInsets.only(left: 24.0),
+            child: Icon(
+              Icons.menu,
+              color: Colors.grey[800]
+                   ),
+          ),
+         actions: const[Padding(
+           padding: EdgeInsets.only(right: 25.0),
+           child: Icon(Icons.person),
+         )
+         ],
+       ),
+       body: Column(children: [
+        //texto "i want to eat"
+        const Padding(
+          padding: EdgeInsets.only(left: 30.0),
+          child: Row(
+            children: [
+              Text("i want to ", style: TextStyle(fontSize: 24), ),
+              Text("Eat", style :TextStyle(fontSize: 24, fontWeight: FontWeight.bold, decoration: TextDecoration.underline),),
+          ],
+          ),
         ),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 24.0),
-            child: Icon(Icons.person),
-          ),
-        ],
-      ),
-      body: const Column(
-        children: [
-          Padding(
-            padding: EdgeInsets.all(24.0),
-            child: Text(
-              "I want to",
-              style: TextStyle(fontSize: 24),
-            ),
-          ),
-        ],
-      ),
-    );
+        //tab bar
+        TabBar(tabs:myTabs)
+        //tab bar view
+       ],),
+       ),
+    ); //Icon       
   }
 }

@@ -3,4 +3,4 @@
 ***Materia impartida por el maestro Rodrigo Fidel Gaxiola Sosa***
 
 > By Luis Salazar
-- Ultimo cambio (myTab añandida)
+- Ultimo cambio (myTab añandida con imagenes)
