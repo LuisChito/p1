@@ -3,4 +3,4 @@
 ***Materia impartida por el maestro Rodrigo Fidel Gaxiola Sosa***
 
 > By Luis Salazar
-- Ultimo cambio (TabBar con el indice añadido)
+- Ultimo cambio (DonutTile Add con colorcitos)
