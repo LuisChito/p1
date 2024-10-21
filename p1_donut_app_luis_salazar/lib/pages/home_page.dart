@@ -14,18 +14,34 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-List<Widget> myTabs =[
-  //donut tab
-   const MyTab(iconPath: 'lib/icons/donut.png',),
-  //burger tab
-   const MyTab(iconPath: 'lib/icons/burger.png',),
-  //smothie tab
-  const MyTab(iconPath: 'lib/icons/smoothie.png'),
-  //pizza tab
-  const MyTab(iconPath: 'lib/icons/pizza.png',),
-   //pancakes
-  const MyTab(iconPath: 'lib/icons/pancakes.png',) 
+List<Widget> myTabs = [
+  // Donut tab
+  const MyTab(
+    iconPath: 'lib/icons/donut.png',
+    label: 'Donut', // Nombre debajo del icono
+  ),
+  // Burger tab
+  const MyTab(
+    iconPath: 'lib/icons/burger.png',
+    label: 'Burger', // Nombre debajo del icono
+  ),
+  // Smoothie tab
+  const MyTab(
+    iconPath: 'lib/icons/smoothie.png',
+    label: 'Smoothie', // Nombre debajo del icono
+  ),
+  // Pizza tab
+  const MyTab(
+    iconPath: 'lib/icons/pizza.png',
+    label: 'Pizza', // Nombre debajo del icono
+  ),
+  // Pancakes
+  const MyTab(
+    iconPath: 'lib/icons/pancakes.png',
+    label: 'Pancakes', // Nombre debajo del icono
+  ),
 ];
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
